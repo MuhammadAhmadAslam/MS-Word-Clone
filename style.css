@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.boldTheText{
+font-weight: bolder;
+color: red;
+}
+input{
+width: 100%;
+height: 100px;
+}
+.mainheading{
+text-align: center;
+color: white;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red;
+/* font-family: ; */
+}
+#divmain{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+/* border: 1px solid rgb(137, 107, 107); */
+background-color: red;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.page{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 40px;
+background-color: aliceblue;
+flex-direction: column;
+}
+textarea{
+width: 70%;
+height: 300px;
+border: none;
+outline: none;
+padding: 50px;
+}
+button{
+margin-left: 5px;
+width: 80px;
+}
+#faltu{
+    display: none;
+    font-family: cursive;
+}

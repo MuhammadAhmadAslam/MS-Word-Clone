@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+
+<h6 class="mainheading">Ahmad Word</h6>
+<h1 id="faltu"></h1>
+<div id="divmain">
+    <button id="bold">B</button>
+    <button id="italic">I</button>
+    <button id="underline">U</button>
+    <select name="" id="fontfamily">
+        <option value="" disabled selected>Font Family</option>
+        <option value="serif">Serif</option>
+        <option value="'Times New Roman', Times, serif">Times New Roman</option>
+        <option value="monospace">Monospace</option>
+        <option value="cursive">Crusive</option>
+    </select>
+    <button id="find" title="Find"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button id="replace" title="Replace"><img src="images/replace.png" alt="img" width="10px" height="10px"></button>
+    <select name="" id="">
+        <option value="" selected disabled>Font Size</option>
+        <option value="">2</option>
+        <option value="">4</option>
+        <option value="">6</option>
+        <option value="">8</option>
+        <option value="">10</option>
+        <option value="">12</option>
+        <option value="">14</option>
+        <option value="">16</option>
+        <option value="">18</option>
+        <option value="">20</option>
+        <option value="">22</option>
+        <option value="">24</option>
+        <option value="">26</option>
+        <option value="">28</option>
+        <option value="">30</option>
+    </select>
+    <button title="Align Center"><i class="fa-solid fa-align-center"></i></button>
+    <button title="Align Left"><i class="fa-solid fa-align-left"></i></button>
+    <button title="Align Right"><i class="fa-solid fa-align-right"></i></button>
+</div>
+<div class="page">
+  <p id="display"></p>
+<textarea name="" id="textarea" spellcheck="false"></textarea>
+</div>
+
+
+    <!-- <input type="text" id="textarea1">
+        <br />
+        <button id="boldme">bold me</button>
+
+<a id="h1"></a> -->
+
+<script src="app.js"></script>
+
+
+
+    <script>
+
+
+
+
+
+
+
+    let textarea = document.getElementById('textarea')
+
+
+
+
+
+
+        // var words = []
+//         var selectedText = ''
+//             let textarea = document.getElementById('textarea1');
+
+// textarea.onselect = function() {
+//         var selectedText = textarea.value.substring(textarea.selectionStart, textarea.selectionEnd);
+        
+//         document.getElementById('boldme').addEventListener('click', function(){
+//             words = `<strong>${selectedText}<strong>`
+//               document.getElementById('h1').innerHTML = words
+//               console.log(textarea.innerText);
+//         })
+// }
+
+        // function boldText(){
+        //     selectedText = words.toString()
+        //     selectedText.style.fontWeight = 'bolder'
+        //     console.log(selectedText);
+        //     alert(true)
+        // }
+
+    </script>
+</body>
+</html>
