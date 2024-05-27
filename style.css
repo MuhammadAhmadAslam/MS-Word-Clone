@@ -3,6 +3,11 @@
     padding: 0;
     
 }
+@media only screen and (max-width: 500px) {
+    #divmain {
+      display: none;
+    }
+  }
 .boldTheText{
 font-weight: bolder;
 color: red;
@@ -18,7 +23,8 @@ height: 30px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: red;
+background-color: burlywood;
+font-family: cursive;
 /* font-family: ; */
 }
 #divmain{
@@ -27,7 +33,7 @@ justify-content: center;
 align-items: center;
 padding: 0;
 /* border: 1px solid rgb(137, 107, 107); */
-background-color: red;
+background-color: burlywood;
 padding-top: 20px;
 padding-bottom: 20px;
 }
@@ -36,8 +42,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-top: 40px;
-background-color: aliceblue;
+background-color: wheat;
 flex-direction: column;
+height: 80vh;
 }
 textarea{
 width: 70%;

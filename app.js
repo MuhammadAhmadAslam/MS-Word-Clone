@@ -11,8 +11,11 @@ let left = document.getElementById('left')
 let right = document.getElementById('right')
 let center = document.getElementById('center')
 var selectedText = ''
-
-
+var div = document.getElementById('divmain')
+if (window.innerWidth <= 500) {
+    alert("Please open this website in a larger screen for better experience.");
+    div.style.display = 'none';
+}
 textarea.onselect = function() {
         var selectedText = textarea.value.substring(textarea.selectionStart, textarea.selectionEnd);
         console.log(typeof selectedText);
