@@ -6,6 +6,10 @@ let font = document.getElementById('fontfamily')
 let find = document.getElementById('find')
 let display = document.getElementById('display')
 let replace = document.getElementById('replace')
+let fontSizes = document.getElementById('fontsize')
+let left = document.getElementById('left')
+let right = document.getElementById('right')
+let center = document.getElementById('center')
 var selectedText = ''
 
 
@@ -50,6 +54,20 @@ textarea.onselect = function() {
                let repalcedWord = text.replace(values1,repalceWord)
                textarea.value = repalcedWord
            }
+        })
+        
+        fontSizes.addEventListener('click',() => {
+            teaxtarea.style.fontSize = `${fontSizes.value}px`
+        })
+
+        left.addEventListener('click',() => {
+            teaxtarea.style.textAlign = 'left'
+        })
+        right.addEventListener('click',() => {
+            teaxtarea.style.textAlign = 'right'
+        })
+        center.addEventListener('click',() => {
+            teaxtarea.style.textAlign = 'center'
         })
 
 }
