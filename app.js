@@ -11,6 +11,9 @@ let left = document.getElementById('left')
 let right = document.getElementById('right')
 let center = document.getElementById('center')
 var selectedText = ''
+var bolded = false
+var italiced = false
+var underlined = false
 var div = document.getElementById('divmain')
 if (window.innerWidth <= 500) {
     alert("Please open this website in a larger screen for better experience.");
@@ -22,13 +25,31 @@ textarea.onselect = function() {
         let strToElement = document.getElementById('faltu').innerText = selectedText
         console.log(strToElement);
         bold.addEventListener('click', () => {
-            teaxtarea.style.fontWeight = 'bolder'
+            if (bolded == false) {
+                teaxtarea.style.fontWeight = 'bolder'
+                bolded = true
+            }else{
+                teaxtarea.style.fontWeight = 'normal'
+                bolded = false
+            }
         })
         italic.addEventListener('click', () => {
-            teaxtarea.style.fontStyle = 'italic'
+            if (italiced == false) {
+                teaxtarea.style.fontStyle = 'italic' 
+                italiced = true
+            }else{
+                teaxtarea.style.fontStyle = 'normal'
+                italiced = false
+            }
         })
         underline.addEventListener('click', () => {
-            teaxtarea.style.textDecoration = 'underline'
+            if (underlined == false) {
+                teaxtarea.style.textDecoration = 'underline'
+                underlined = true
+            }else{
+                teaxtarea.style.textDecoration = 'none'
+                underlined = false
+            }
         })
         font.addEventListener('click' , () => {
             let select = font.value
